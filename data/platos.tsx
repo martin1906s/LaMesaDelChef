@@ -1,25 +1,30 @@
 export interface Plato {
     nombre: string;
     ingredientes: { nombre: string; precio: number, url: string }[];
-    precio?: number; // Cambiado a opcional, ya que lo calcularemos dinámicamente
+    precio?: number;
     imagen: string;
     destacado?: boolean;
 }
 
 export const platos: Plato[] = [
     {
-        nombre: "Tacos al Pastor",
+        nombre: "Arroz Marinero",
         ingredientes: [
-            { nombre: "Tortillas de maíz", precio: 100, url: "/file.svg" },
-            { nombre: "Carne de cerdo", precio: 20, url: "/file.svg" },
-            { nombre: "Piña", precio: 5, url: "/file.svg" },
-            { nombre: "Cebolla", precio: 2, url: "/file.svg" },
-            { nombre: "Cilantro", precio: 2, url: "/file.svg" },
+            { nombre: "Mariscos", precio: 100, url: "/file.svg" },
+            { nombre: "Pimiento", precio: 20, url: "/file.svg" },
+            { nombre: "Cebolla", precio: 5, url: "/file.svg" },
+            { nombre: "Comino", precio: 2, url: "/file.svg" },
+            { nombre: "Ajo", precio: 2, url: "/file.svg" },
+            { nombre: "Sal", precio: 10, url: "/file.svg" },
+            { nombre: "Mantequilla", precio: 5, url: "/file.svg" },
+            { nombre: "Salsa de tomate y mostaza", precio: 2, url: "/file.svg" },
+            { nombre: "Arroz", precio: 10, url: "/file.svg" },
+            { nombre: "Salsa de ostión", precio: 2, url: "/file.svg" },
         ],
-        imagen: "/file.svg",
+        imagen: "/arrozmarinero.jpg",
     },
     {
-        nombre: "Enchiladas",
+        nombre: "Sopa",
         ingredientes: [
             { nombre: "Tortillas de maíz", precio: 10, url: "/file.svg" },
             { nombre: "Carne de cerdo", precio: 200, url: "/file.svg" },
@@ -30,7 +35,7 @@ export const platos: Plato[] = [
         imagen: "/file.svg",
     },
     {
-        nombre: "Tamales",
+        nombre: "Arroz",
         ingredientes: [
             { nombre: "Tortillas de maíz", precio: 10, url: "/file.svg" },
             { nombre: "Carne de cerdo", precio: 20, url: "/file.svg" },
@@ -41,7 +46,7 @@ export const platos: Plato[] = [
         imagen: "/file.svg",
     },
     {
-        nombre: "Chiles en Nogada",
+        nombre: "Medallones de pollo",
         ingredientes: [
             { nombre: "Tortillas de maíz", precio: 10, url: "/file.svg" },
             { nombre: "Carne de cerdo", precio: 20, url: "/file.svg" },
