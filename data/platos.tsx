@@ -24,15 +24,15 @@ export const platos: Plato[] = [
         imagen: "/arrozmarinero.jpg",
     },
     {
-        nombre: "Sopa",
+        nombre: "Medallones de Pollo",
         ingredientes: [
-            { nombre: "Tortillas de maíz", precio: 10, url: "/file.svg" },
-            { nombre: "Carne de cerdo", precio: 200, url: "/file.svg" },
-            { nombre: "Piña", precio: 5, url: "/file.svg" },
-            { nombre: "Cebolla", precio: 2, url: "/file.svg" },
-            { nombre: "Cilantro", precio: 2, url: "/file.svg" },
+            { nombre: "Pollo", precio: 10, url: "/file.svg" },
+            { nombre: "Jamón y Queso", precio: 200, url: "/file.svg" },
+            { nombre: "Ensalada salteada de vainita y zanahoria", precio: 5, url: "/file.svg" },
+            { nombre: "Salsa de reducción de Ciruelas", precio: 2, url: "/file.svg" },
+            { nombre: "Croqueta de Papa", precio: 2, url: "/file.svg" },
         ],
-        imagen: "/file.svg",
+        imagen: "/medallondepollo.jpg",
     },
     {
         nombre: "Arroz",
