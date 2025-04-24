@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Menu from "../../components/menu";
-
+import CanvasSection from "@/app/canvas/page";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -16,6 +16,7 @@ export default function Home() {
         La Mesa del Chef
       </h1>
       <Menu/>
+      <CanvasSection/>
     </main>
   );
 }
