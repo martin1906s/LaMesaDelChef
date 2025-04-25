@@ -46,6 +46,7 @@ function Box({ title, className }: { title: string; className: string }) {
     return (
         <div className={`box ${className}`}>
             {title}
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex alias expedita, tempora quibusdam ipsam ipsum quis commodi voluptas molestias illo harum quasi autem beatae nesciunt vero maiores veniam! Eligendi, provident!</p>
         </div>
     );
 }

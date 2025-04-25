@@ -10,16 +10,10 @@ export const platos: Plato[] = [
     {
         nombre: "Arroz Marinero",
         ingredientes: [
-            { nombre: "Mariscos", precio: 100, url: "/file.svg" },
-            { nombre: "Pimiento", precio: 20, url: "/file.svg" },
-            { nombre: "Cebolla", precio: 5, url: "/file.svg" },
-            { nombre: "Comino", precio: 2, url: "/file.svg" },
-            { nombre: "Ajo", precio: 2, url: "/file.svg" },
-            { nombre: "Sal", precio: 10, url: "/file.svg" },
-            { nombre: "Mantequilla", precio: 5, url: "/file.svg" },
-            { nombre: "Salsa de tomate y mostaza", precio: 2, url: "/file.svg" },
-            { nombre: "Arroz", precio: 10, url: "/file.svg" },
-            { nombre: "Salsa de ostión", precio: 2, url: "/file.svg" },
+            { nombre: "Mix de Mariscos", precio: 3.89, url: "/mariscos.jpg" },
+            { nombre: "Arroz", precio: 0.30, url: "/arroz.jpg" },
+            { nombre: "Verduras", precio: 0.30, url: "/verduras.jpg" },
+            { nombre: "Especias de Comida", precio: 0.50, url: "/especias.jpg" },
         ],
         imagen: "/arrozmarinero.jpg",
     },
@@ -60,5 +54,5 @@ export const platos: Plato[] = [
 
 // Calcula el precio dinámicamente sumando los precios de los ingredientes
 platos.forEach((plato) => {
-    plato.precio = plato.ingredientes.reduce((total, ingrediente) => total + ingrediente.precio, 0);
+    plato.precio = parseFloat(plato.ingredientes.reduce((total, ingrediente) => total + ingrediente.precio, 0).toFixed(2));
 });

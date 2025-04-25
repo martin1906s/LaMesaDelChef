@@ -106,7 +106,7 @@ export default function Plato() {
                                         justifyContent: "center",
                                     }}
                                 >
-                                    ${plato.precio}
+                                    ${plato.precio?.toFixed(2) || "0.00"}
                                 </h3>
                             </div>
                         </div>
@@ -259,7 +259,7 @@ export default function Plato() {
                                                 flexShrink: 0,
                                             }}
                                         >
-                                            ${ing.precio}
+                                            ${ing.precio.toFixed(2)}
                                         </div>
                                     </li>
 

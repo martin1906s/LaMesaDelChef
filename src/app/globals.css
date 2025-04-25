@@ -40,6 +40,7 @@ a {
     color-scheme: dark;
   }
 }
+
 /* Container for the entire canvas */
 .canvas-container {
   display: flex;
@@ -47,7 +48,7 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #000000; /* bg-gray-100 */
+  background-color: #000000; /* Light gray to match the image background */
   padding: 16px; /* p-4 */
 }
 
@@ -56,6 +57,7 @@ a {
   font-size: 2.25rem; /* text-4xl */
   font-weight: 700; /* font-bold */
   margin-bottom: 16px; /* mb-4 */
+  color: #1f2937; /* Darker gray for contrast */
 }
 
 /* Main container for the rows */
@@ -85,62 +87,80 @@ a {
 /* Base styling for all boxes */
 .box {
   display: flex;
+  flex-direction: column; /* Stack title and paragraph vertically */
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8px; /* p-2 */
+  padding: 12px; /* Increased padding for better spacing */
   color: white;
   font-weight: 700; /* font-bold */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
   flex: 1;
+  border: 2px solid #1e40af; /* Blue border to match the image */
+}
+
+.box h2 {
+  font-size: 1.25rem; /* Slightly larger title */
+  margin-bottom: 8px; /* Space between title and paragraph */
+}
+
+.box p {
+  font-size: 0.875rem; /* Smaller font for the paragraph */
+  font-weight: 400; /* Regular weight for readability */
+  line-height: 1.25; /* Better line spacing */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
 }
 
 /* Specific box styles */
 .box-aliados-clave {
   background-color: #2dd4bf; /* Teal-500 equivalent */
-  height: 200px;
+  height: 220px; /* Slightly taller to accommodate text */
 }
 
 .box-actividades-clave {
   background-color: #f43f5e; /* Rose-400 equivalent */
-  height: 100px;
+  height: 110px;
 }
 
 .box-recursos-clave {
   background-color: #0ea5e9; /* Sky-500 equivalent */
-  height: 100px;
+  height: 110px;
 }
 
 .box-propuesta-valor {
   background-color: #6366f1; /* Indigo-500 equivalent */
-  height: 200px;
+  height: 220px;
   flex: 1;
 }
 
 .box-relacion-clientes {
   background-color: #22d3ee; /* Cyan-400 equivalent */
-  height: 100px;
+  height: 110px;
 }
 
 .box-canales {
   background-color: #0d9488; /* Teal-600 equivalent */
-  height: 100px;
+  height: 110px;
 }
 
 .box-segmento-clientes {
   background-color: #f43f5e; /* Rose-400 equivalent */
-  height: 200px;
+  height: 220px;
   flex: 1;
 }
 
 .box-estructura-costes {
   background-color: #f43f5e; /* Rose-400 equivalent */
   flex: 3;
-  height: 100px;
+  height: 110px;
 }
 
 .box-flujos-ingresos {
   background-color: #e11d48; /* Rose-600 equivalent */
   flex: 1;
-  height: 100px;
+  height: 110px;
 }
