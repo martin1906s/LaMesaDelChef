@@ -1,166 +1,164 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-/* Container for the entire canvas */
+/* Estilos base del Canvas */
 .canvas-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #000000; /* Light gray to match the image background */
-  padding: 16px; /* p-4 */
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Title styling */
 .canvas-title {
-  font-size: 2.25rem; /* text-4xl */
-  font-weight: 700; /* font-bold */
-  margin-bottom: 16px; /* mb-4 */
-  color: #1f2937; /* Darker gray for contrast */
-}
-
-/* Main container for the rows */
-.main-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1200px; /* max-w-6xl */
-  gap: 4px; /* space-y-1 */
-}
-
-/* Row styling */
-.row {
-  display: flex;
-  flex-direction: row;
-  gap: 4px; /* space-x-1 */
-}
-
-/* Column styling for stacked boxes */
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 4px; /* space-y-1 */
-  flex: 1;
-}
-
-/* Base styling for all boxes */
-.box {
-  display: flex;
-  flex-direction: column; /* Stack title and paragraph vertically */
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 12px; /* Increased padding for better spacing */
+  font-size: clamp(24px, 3vw, 48px);
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.canvas-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Grid del Canvas */
+.canvas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+  height: 90vh;
+  min-height: 800px;
+}
+
+/* Estilos comunes para los items */
+.canvas-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+  overflow: auto;
+}
+
+.canvas-item h2 {
+  font-size: clamp(16px, 1.5vw, 24px);
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.canvas-item h3 {
+  font-size: clamp(14px, 1.2vw, 20px);
+  margin: 10px 0 5px 0;
+  color: #444;
+}
+
+.canvas-item p {
+  font-size: clamp(12px, 1.1vw, 18px);
+  margin: 5px 0;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Distribución específica de las secciones */
+.value-proposition {
+  grid-area: 1 / 2 / 3 / 4;
+  background-color: #FFE8D6;
+}
+
+.customer-segments {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #DDBEA9;
+}
+
+.channels {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: #B7B7A4;
+}
+
+.customer-relationships {
+  grid-area: 2 / 4 / 3 / 5;
+  background-color: #A5A58D;
+}
+
+.revenue-streams {
+  grid-area: 3 / 4 / 4 / 5;
+  background-color: #CB997E;
+}
+
+.key-resources {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #6B705C;
   color: white;
-  font-weight: 700; /* font-bold */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
-  flex: 1;
-  border: 2px solid #1e40af; /* Blue border to match the image */
 }
 
-.box h2 {
-  font-size: 1.25rem; /* Slightly larger title */
-  margin-bottom: 8px; /* Space between title and paragraph */
+.key-resources h2,
+.key-resources h3,
+.key-resources p {
+  color: white;
 }
 
-.box p {
-  font-size: 0.875rem; /* Smaller font for the paragraph */
-  font-weight: 400; /* Regular weight for readability */
-  line-height: 1.25; /* Better line spacing */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limit to 3 lines */
-  -webkit-box-orient: vertical;
+.key-activities {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: #A5A58D;
 }
 
-/* Specific box styles */
-.box-aliados-clave {
-  background-color: #2dd4bf; /* Teal-500 equivalent */
-  height: 220px; /* Slightly taller to accommodate text */
+.key-partners {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: #B7B7A4;
 }
 
-.box-actividades-clave {
-  background-color: #f43f5e; /* Rose-400 equivalent */
-  height: 110px;
+.cost-structure {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: #FFE8D6;
 }
 
-.box-recursos-clave {
-  background-color: #0ea5e9; /* Sky-500 equivalent */
-  height: 110px;
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .canvas-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+      min-height: 0;
+  }
+  
+  .canvas-item {
+      grid-area: auto !important;
+      min-height: 200px;
+  }
+  
+  .canvas-title {
+      font-size: 28px;
+  }
 }
 
-.box-propuesta-valor {
-  background-color: #6366f1; /* Indigo-500 equivalent */
-  height: 220px;
-  flex: 1;
-}
-
-.box-relacion-clientes {
-  background-color: #22d3ee; /* Cyan-400 equivalent */
-  height: 110px;
-}
-
-.box-canales {
-  background-color: #0d9488; /* Teal-600 equivalent */
-  height: 110px;
-}
-
-.box-segmento-clientes {
-  background-color: #f43f5e; /* Rose-400 equivalent */
-  height: 220px;
-  flex: 1;
-}
-
-.box-estructura-costes {
-  background-color: #f43f5e; /* Rose-400 equivalent */
-  flex: 3;
-  height: 110px;
-}
-
-.box-flujos-ingresos {
-  background-color: #e11d48; /* Rose-600 equivalent */
-  flex: 1;
-  height: 110px;
+/* Estilos para pantallas 4K */
+@media (min-width: 2560px) {
+  .canvas-container {
+      max-width: 3000px;
+  }
+  
+  .canvas-grid {
+      gap: 25px;
+  }
+  
+  .canvas-item {
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  
+  .canvas-item h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+  }
+  
+  .canvas-item h3 {
+      font-size: 28px;
+  }
+  
+  .canvas-item p {
+      font-size: 24px;
+      line-height: 1.6;
+  }
 }
