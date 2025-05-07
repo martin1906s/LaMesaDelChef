@@ -20,24 +20,14 @@ export const platos: Plato[] = [
     {
         nombre: "Medallones de Pollo",
         ingredientes: [
-            { nombre: "Pollo", precio: 10, url: "/file.svg" },
-            { nombre: "Jamón y Queso", precio: 200, url: "/file.svg" },
-            { nombre: "Ensalada salteada de vainita y zanahoria", precio: 5, url: "/file.svg" },
-            { nombre: "Salsa de reducción de Ciruelas", precio: 2, url: "/file.svg" },
-            { nombre: "Croqueta de Papa", precio: 2, url: "/file.svg" },
+            { nombre: "Pollo", precio: 2.50, url: "/pollo.jpg" },
+            { nombre: "Jamón", precio: 0.25, url: "/jamon.jpg" },
+            { nombre: "Queso Mozarella", precio: 0.25, url: "/queso.jpg" },                    
+            { nombre: "Papa", precio: 1, url: "/papas.jpg" },
+            { nombre: "Ensalada de Vainita y Zanahoria", precio: 0.25, url: "/enzaladaZanahoriaVainitas.jpg" },
+            { nombre: "Salsa de Ciruelas", precio: 0.25, url: "/salsaCiruela.jpg" },
         ],
         imagen: "/medallondepollo.jpg",
-    },
-    {
-        nombre: "Arroz",
-        ingredientes: [
-            { nombre: "Tortillas de maíz", precio: 10, url: "/file.svg" },
-            { nombre: "Carne de cerdo", precio: 20, url: "/file.svg" },
-            { nombre: "Piña", precio: 5, url: "/file.svg" },
-            { nombre: "Cebolla", precio: 2, url: "/file.svg" },
-            { nombre: "Cilantro", precio: 2, url: "/file.svg" },
-        ],
-        imagen: "/file.svg",
     },
     {
         nombre: "Medallones de pollo",
@@ -52,7 +42,7 @@ export const platos: Plato[] = [
     },
 ];
 
-// Calcula el precio dinámicamente sumando los precios de los ingredientes
+// Calcula el precio de los ingredientes
 platos.forEach((plato) => {
     plato.precio = parseFloat(plato.ingredientes.reduce((total, ingrediente) => total + ingrediente.precio, 0).toFixed(2));
 });
