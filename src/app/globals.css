@@ -113,6 +113,55 @@
   background-color: #FFE8D6;
 }
 
+
+.integrantes-container {
+  padding: 20px;
+  width: 100%;
+}
+
+.integrantes-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.integrantes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-right: 300px;
+}
+
+.grupo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  max-width: 100%;
+
+}
+
+.grupo-image {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.integrantes-list {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .canvas-grid {
@@ -162,3 +211,35 @@
       line-height: 1.6;
   }
 } 
+/* Para tablets - 3 columnas (igual que laptops) */
+@media (max-width: 1024px) {
+  .integrantes-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Para teléfonos - 2 columnas */
+@media (max-width: 758px) {
+  .integrantes-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Para teléfonos muy pequeños - 1 columna */
+@media (max-width: 480px) {
+  .integrantes-grid {
+      grid-template-columns: 2fr;
+  }
+  
+  .grupo-card {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .integrantes-list {
+      align-items: center;
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: justify;
+  }
+}

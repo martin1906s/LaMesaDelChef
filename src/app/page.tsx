@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Menu from "../../components/menu";
 import CanvasSection from "@/app/canvas/page";
+import Integrantes from "../../components/integrantes";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -17,6 +18,7 @@ export default function Home() {
       </h1>
       <Menu/>
       <CanvasSection/>
+      <Integrantes/>
     </main>
   );
 }
