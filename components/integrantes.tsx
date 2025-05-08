@@ -6,7 +6,7 @@ import { integrantes } from "../data/integrantes";
 export default function Integrantes() {
     return (
         <footer className="integrantes-container">
-            <h1 className="integrantes-title">Grupos 3 "H"</h1>
+            <h1 className="integrantes-title">Grupos 3H</h1>
             <div className="integrantes-grid">
                 {integrantes.map((grupo: Integrante) => (
                     <div key={grupo.grupo} className="grupo-card">
