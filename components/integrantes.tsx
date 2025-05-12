@@ -22,7 +22,7 @@ export default function Integrantes() {
                         <ul className="integrantes-list">
                             {grupo.integrantes.map((integrante, index) => (
                                 <li key={index}>
-                                    {integrante.nombre} - <b>{integrante.rol}</b>
+                                    {integrante.nombre} ● <b>{integrante.rol}</b>
                                 </li>
                             ))}
                         </ul>

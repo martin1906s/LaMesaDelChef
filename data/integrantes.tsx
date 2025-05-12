@@ -105,7 +105,7 @@ export const integrantes: Integrante[] = [
     {
         grupo: 11,
         integrantes: [
-            { nombre: "Simbaña  Martín", rol: "Desarrollador Web" },
+            { nombre: "Simbaña  M.", rol: "Desarrollador Web" },
         ],
         imagen: "/grupos/dev.jpg"
     },

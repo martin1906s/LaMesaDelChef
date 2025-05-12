@@ -1,3 +1,5 @@
+/* global.css */
+
 /* Estilos base del Canvas */
 .canvas-container {
   max-width: 2000px;
@@ -113,7 +115,7 @@
   background-color: #FFE8D6;
 }
 
-
+/* Estilos para Integrantes */
 .integrantes-container {
   padding: 20px;
   width: 100%;
@@ -139,12 +141,11 @@
   align-items: center;
   margin-bottom: 10px;
   padding: 5px;
-  background-color: #f9f9f9;
+  background-color: #ff0505;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 8 15px 5px rgba(66, 54, 73, 0.692);
   border: 1px solid #e0e0e0;
   max-width: 100%;
-
 }
 
 .grupo-image {
@@ -162,6 +163,94 @@
   align-items: flex-start;
   margin-left: 10px;
 }
+
+/* Estilos para Descripcion */
+.descripcion-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.descripcion-title {
+  font-size: clamp(24px, 2.5vw, 28px);
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 16px;
+  text-align: left;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.descripcion-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #cb997e; /* Color suave de la paleta existente */
+}
+
+.descripcion-text {
+  font-size: clamp(16px, 1.5vw, 18px);
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  text-align: justify;
+}
+
+
+/* Estilos para el plato */
+/* Animaciones para los platos */
+.plato-container {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.plato-container:nth-child(odd) {
+  transform: translateX(-50px);
+}
+
+.plato-container:nth-child(even) {
+  transform: translateX(50px);
+}
+
+.plato-container.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .plato-container:nth-child(odd),
+  .plato-container:nth-child(even) {
+    transform: translateX(-30px);
+  }
+  
+  .plato-container.visible {
+    transform: translateX(0);
+  }
+}
+
+/* Estilos base para el menú */
+.menu-container {
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .canvas-grid {
@@ -178,6 +267,19 @@
   
   .canvas-title {
       font-size: 28px;
+  }
+
+  .descripcion-container {
+    padding: 20px 10px;
+  }
+
+  .descripcion-title {
+    font-size: 20px;
+  }
+
+  .descripcion-text {
+    font-size: 14px;
+    margin-bottom: 24px;
   }
 }
 
@@ -210,11 +312,38 @@
       font-size: 24px;
       line-height: 1.6;
   }
-} 
+
+  .descripcion-container {
+    max-width: 1000px;
+    padding: 60px 40px;
+  }
+
+  .descripcion-title {
+    font-size: 32px;
+  }
+
+  .descripcion-text {
+    font-size: 20px;
+  }
+}
+
 /* Para tablets - 3 columnas (igual que laptops) */
 @media (max-width: 1024px) {
   .integrantes-grid {
       grid-template-columns: repeat(3, 1fr);
+  }
+
+  .descripcion-container {
+    max-width: 90%;
+    padding: 30px 15px;
+  }
+
+  .descripcion-title {
+    font-size: 24px;
+  }
+
+  .descripcion-text {
+    font-size: 16px;
   }
 }
 
@@ -228,7 +357,7 @@
 /* Para teléfonos muy pequeños - 1 columna */
 @media (max-width: 480px) {
   .integrantes-grid {
-      grid-template-columns: 2fr;
+      grid-template-columns: 1fr;
   }
   
   .grupo-card {

@@ -164,3 +164,116 @@
       line-height: 1.6;
   }
 }
+
+/* page.module.css */
+
+/* Estilos para el contenedor principal */
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Fondo claro para consistencia con global.css */
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor para logo y título */
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Estilos para el logo */
+.logoImage {
+  border-radius: 100%; /* Bordes redondeados para un look moderno */
+  box-shadow: 15px 15px 15px rgba(255, 0, 0, 0.171); /* Sombra suave */
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+.logoImage:hover {
+  transform: scale(1.05); /* Efecto sutil al pasar el ratón */
+}
+
+/* Estilos para el título */
+.title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  color: #2d2d2d; /* Color oscuro para contraste */
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  letter-spacing: 0.5px; /* Espaciado elegante */
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: #cb997e; /* Color de la paleta existente */
+}
+
+/* Responsividad para tablets */
+@media (max-width: 1024px) {
+  .main {
+    padding: 30px 15px;
+  }
+
+  .logoImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .title {
+    font-size: clamp(28px, 3.5vw, 36px);
+  }
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .main {
+    padding: 20px 10px;
+  }
+
+  .logoImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title {
+    font-size: clamp(24px, 3vw, 30px);
+    margin-top: 15px;
+  }
+
+  .title::after {
+    width: 40px;
+  }
+}
+
+/* Estilos para pantallas 4K */
+@media (min-width: 2560px) {
+  .main {
+    padding: 60px 40px;
+  }
+
+  .logoImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .title {
+    font-size: clamp(48px, 4.5vw, 56px);
+    margin-top: 30px;
+  }
+
+  .title::after {
+    width: 80px;
+  }
+}

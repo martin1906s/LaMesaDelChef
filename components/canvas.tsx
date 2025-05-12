@@ -107,7 +107,7 @@ export default function Canvas() {
                     <p>● Mesero</p>
                     <p>● Personal de servicio</p>
                     <p>● Personal de logística</p>
-                    <p>● Homenaje</p>
+                    <p>● Menaje</p>
                     <p>● Administrador o coordinador</p>
                     <p>● Transporte adecuado</p>
                     <p>● Planificación del menú</p>
