@@ -22,23 +22,24 @@ export const platos: Plato[] = [
         ingredientes: [
             { nombre: "Pollo", precio: 2.50, url: "/pollo.jpg" },
             { nombre: "Jamón", precio: 0.25, url: "/jamon.jpg" },
-            { nombre: "Queso Mozarella", precio: 0.25, url: "/queso.jpg" },                    
-            { nombre: "Papa", precio: 1, url: "/papas.jpg" },
+            { nombre: "Queso Mozarella", precio: 0.25, url: "/queso.jpg" },
+            { nombre: "Croqueta de Papa", precio: 1, url: "/papas.jpg" },
             { nombre: "Ensalada de Vainita y Zanahoria", precio: 0.25, url: "/enzaladaZanahoriaVainitas.jpg" },
             { nombre: "Salsa de Ciruelas", precio: 0.25, url: "/salsaCiruela.jpg" },
         ],
         imagen: "/medallondepollo.jpg",
     },
     {
-        nombre: "Medallones de pollo",
+        nombre: "Medallones de pollo y Arroz",
         ingredientes: [
-            { nombre: "Tortillas de maíz", precio: 10, url: "/file.svg" },
-            { nombre: "Carne de cerdo", precio: 20, url: "/file.svg" },
-            { nombre: "Piña", precio: 5, url: "/file.svg" },
-            { nombre: "Cebolla", precio: 2, url: "/file.svg" },
-            { nombre: "Cilantro", precio: 2, url: "/file.svg" },
+            { nombre: "Croqueta de Papa", precio: 1, url: "/papas2.jpg" },
+            { nombre: "Arroz Amarillo", precio: 0.25, url: "/arrozamarillo.png" },
+            { nombre: "Pollo", precio: 2.50, url: "/pollo2.jpg" },
+            { nombre: "Jamón", precio: 0.25, url: "/jamon2.jpg" },
+            { nombre: "Queso Mozarella", precio: 0.25, url: "/queso2.jpg" },
+            { nombre: "Ensalada de Mango y Vinagreta", precio: 0.50, url: "/ensaladaMango.png" },
         ],
-        imagen: "/file.svg",
+        imagen: "/arrozypapa.jpg",
     },
 ];
 
