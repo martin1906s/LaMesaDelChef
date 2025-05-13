@@ -1,10 +1,9 @@
 export default function Descripcion() {
     return (
         <div className="descripcion-container">
-            <h2 className="descripcion-title">Objetivo General</h2>
+            <h2 className="descripcion-title">Propuesta De Valor</h2>
             <p className="descripcion-text">
-                Ofrecer un servicio de buffet a través del proyecto “La Mesa del Chef”, orientado a eventos sociales y corporativos, que permita a cada persona seleccionar libremente los platos de su preferencia, brindando productos gastronómicos de alta calidad, atención personalizada y una experiencia culinaria única, adaptada a los gustos y necesidades de cada cliente.
-            </p>
+                Nuestro objetivo es brindarte una experiencia gastronómica inolvidable aquí en La Mesa del Chef para compartir con tus amigos y familiares. Nuestro buffet ofrecerá platos preparados exquisitamente con productos frescos y de alta calidad, variedad de opciones para satisfacer todos los gustos y preferencias, un ambiente acogedor y elegante, y un servicio personalizado y atento. Utilizamos solo los mejores ingredientes y seguimos estrictos protocolos de higiene y seguridad alimentaria. Nuestro buffet es perfecto para graduaciones, cumpleaños, bodas, aniversarios y reuniones familiares.             </p>
             <h2 className="descripcion-title">¿Quiénes Somos?</h2>
             <p className="descripcion-text">
                 Este proyecto ha sido elaborado por los estudiantes del Tercero de Bachillerato “H” de la Unidad Educativa Los Shyris, como parte de la promoción 2024-2025, con el propósito de aplicar los conocimientos adquiridos tanto en nuestra especialidad como en el área común durante nuestra formación académica, y desarrollar una propuesta de emprendimiento que refleje nuestras habilidades, creatividad y compromiso.

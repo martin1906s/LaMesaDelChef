@@ -4,6 +4,7 @@ import Menu from "../../components/menu";
 import CanvasSection from "@/app/canvas/page";
 import Integrantes from "../../components/integrantes";
 import Descripcion from "../../components/descripcion";
+import Footer from "../../components/footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Menu/>
       <CanvasSection/>
       <Integrantes/>
+      <Footer/>
     </main>
   );
 }
