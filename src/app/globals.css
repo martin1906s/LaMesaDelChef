@@ -61,7 +61,16 @@
   color: #555;
   line-height: 1.4;
 }
-
+.canvas-curso {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.canvas-nombre {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
 /* Distribución específica de las secciones */
 .value-proposition {
   grid-area: 1 / 2 / 3 / 4;

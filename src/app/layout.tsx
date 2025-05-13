@@ -29,6 +29,20 @@ export default function RootLayout({
         <title>La Mesa del Chef</title>
         <meta name="description" content="Buffet de comida" />
         <link rel="icon" href="/logo.jpg" />
+        <link rel="shortcut icon" href="/logo.jpg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logo.jpg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo.jpg" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/logo.jpg" />
+        <link rel="icon" type="image/x-icon" href="/logo.jpg" />
+        <link rel="icon" type="image/svg+xml" href="/logo.jpg" />
+        <link rel="icon" type="image/vnd.microsoft.icon" href="/logo.jpg" />
+        <link rel="icon" type="image/webp" href="/logo.jpg" />
+        <link rel="icon" type="image/avif" href="/logo.jpg" />
+        <link rel="icon" type="image/jpg" href="/logo.jpg" />
+        <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+        <link rel="icon" type="image/gif" href="/logo.jpg" />
+        <link rel="icon" type="image/bmp" href="/logo.jpg" />
+        <link rel="icon" type="image/tiff" href="/logo.jpg" />
         <link rel="apple-touch-icon" href="/logo.jpg" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#000000" />
