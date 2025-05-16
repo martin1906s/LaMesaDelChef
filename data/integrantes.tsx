@@ -43,6 +43,13 @@ export const integrantes: Integrante[] = [
         imagen: "/grupos/10.jpg"
     },
     {
+        grupo: 11,
+        integrantes: [
+            { nombre: "Guaman", rol: "Lider" }
+        ],
+        imagen: "/grupos/11.jpg"
+    },
+    {
         grupo: 4,
         integrantes: [
             { nombre: "Toledo", rol: "Lider" },
@@ -103,7 +110,7 @@ export const integrantes: Integrante[] = [
         imagen: "/grupos/9.jpg"
     },
     {
-        grupo: 11,
+        grupo: 12,
         integrantes: [
             { nombre: "Simbaña  M.", rol: "Desarrollador Web" },
         ],

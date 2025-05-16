@@ -40,7 +40,7 @@ export const canvas: Canvas[] = [
         id: 1,
         curso: "3 H",
         nombreEmprendimiento: "LA MESA DEL CHEF",
-        slogan: "Come todo lo que quieras, disfruta lo que amas",
+        slogan: "Una delicia sin fin",
         logo: "/logo.png",
         canva: [
             {
