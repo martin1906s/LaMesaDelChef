@@ -30,7 +30,7 @@ export const platos: Plato[] = [
         imagen: "/medallondepollo.jpg",
     },
     {
-        nombre: "Medallones de pollo y Arroz",
+        nombre: "Enrrollado de Pollo",
         ingredientes: [
             { nombre: "Croqueta de Papa", precio: 1, url: "/papas2.jpg" },
             { nombre: "Arroz Amarillo", precio: 0.25, url: "/arrozamarillo.png" },
