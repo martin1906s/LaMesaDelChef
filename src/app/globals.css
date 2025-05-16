@@ -36,7 +36,7 @@
   background-color: white;
   border-radius: 8px;
   padding: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
   overflow: auto;
 }
@@ -61,16 +61,100 @@
   color: #555;
   line-height: 1.4;
 }
+
 .canvas-curso {
   display: flex;
   justify-content: center;
   font-size: 2rem;
 }
+
 .canvas-nombre {
-  display: flex;
-  justify-content: center;
   font-size: 3rem;
+  text-align: center;
 }
+
+.canvas-slogan {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.swiper-nav-btn {
+  position: absolute;
+  top: 20%;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 25%;
+  margin-top: 25%
+}
+
+.canvas-item {
+  position: relative;
+}
+
+.swiper-nav-btn.prev {
+  left: -25px;
+}
+
+.swiper-nav-btn.next {
+  right: -25px;
+}
+
+.swiper-nav-btn:hover {
+  background: #cc1313;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .swiper-nav-btn.prev {
+    left: -15px;
+  }
+
+  .swiper-nav-btn.next {
+    right: -15px;
+  }
+
+  .swiper-nav-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-nav-btn{
+    top: 10%;
+  }
+  .swiper-nav-btn.prev {
+    left: -10px;
+  }
+
+  .swiper-nav-btn.next {
+    right: -10px;
+  }
+
+  .swiper-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+.swiper-slide{
+  position: relative;
+}
+
+
+
 /* Distribución específica de las secciones */
 .value-proposition {
   grid-area: 1 / 2 / 3 / 4;
@@ -201,7 +285,8 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: #cb997e; /* Color suave de la paleta existente */
+  background-color: #cb997e;
+  /* Color suave de la paleta existente */
 }
 
 .descripcion-text {
@@ -235,11 +320,12 @@
 
 /* Estilos responsive */
 @media (max-width: 768px) {
+
   .plato-container:nth-child(odd),
   .plato-container:nth-child(even) {
     transform: translateX(-30px);
   }
-  
+
   .plato-container.visible {
     transform: translateX(0);
   }
@@ -263,19 +349,19 @@
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .canvas-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      height: auto;
-      min-height: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    min-height: 0;
   }
-  
+
   .canvas-item {
-      grid-area: auto !important;
-      min-height: 200px;
+    grid-area: auto !important;
+    min-height: 200px;
   }
-  
+
   .canvas-title {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .descripcion-container {
@@ -295,31 +381,31 @@
 /* Estilos para pantallas 4K */
 @media (min-width: 2560px) {
   .canvas-container {
-      max-width: 3000px;
+    max-width: 3000px;
   }
-  
+
   .canvas-grid {
-      gap: 25px;
+    gap: 25px;
   }
-  
+
   .canvas-item {
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   }
-  
+
   .canvas-item h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 20px;
   }
-  
+
   .canvas-item h3 {
-      font-size: 28px;
+    font-size: 28px;
   }
-  
+
   .canvas-item p {
-      font-size: 24px;
-      line-height: 1.6;
+    font-size: 24px;
+    line-height: 1.6;
   }
 
   .descripcion-container {
@@ -339,7 +425,7 @@
 /* Para tablets - 3 columnas (igual que laptops) */
 @media (max-width: 1024px) {
   .integrantes-grid {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .descripcion-container {
@@ -359,28 +445,29 @@
 /* Para teléfonos - 2 columnas */
 @media (max-width: 758px) {
   .integrantes-grid {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Para teléfonos muy pequeños - 1 columna */
 @media (max-width: 480px) {
   .integrantes-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-  
+
   .grupo-card {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .integrantes-list {
-      align-items: center;
-      margin-left: 0;
-      margin-top: 10px;
-      text-align: justify;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: justify;
   }
 }
+
 .footer-container {
   background-color: #333;
   color: white;
@@ -389,6 +476,7 @@
   position: relative;
   border-radius: 0px 0px 100% 100%
 }
+
 .footer-container a {
   color: #ff0505;
   text-decoration: none;
